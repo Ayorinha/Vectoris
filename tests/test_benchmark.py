@@ -1,3 +1,2 @@
-from vectoris.benchmark import recall_at_k,mrr
-def test_metrics():
- r=["b","a","c"]; e=["a","c"]; assert recall_at_k(r,e,2)==.5; assert mrr(r,e)==.5
+from vectoris.benchmark import *
+def test_metrics(): assert recall_at_k(['b','a'],['a','c'],2)==.5 and mrr(['b','a'],['a'])==.5
